@@ -312,14 +312,11 @@ class ListContact extends StatelessWidget {
   }
 
   void _onTapItem(BuildContext context, Contact contact) {
-    // set up the AlertDialog
     AlertDialog alert = AlertDialog(
       title: Text("Person Information"),
       content: Text(contact.first + " " + contact.last +
           " " + " is a " + g),
     );
-
-    // show the dialog
     showDialog(
       context: context,
       builder: (BuildContext context) {
